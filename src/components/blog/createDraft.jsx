@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { saveDraft, postContent } from "../../services/api";
 import { TextField, Button, Box, Typography } from "@mui/material";
 
-function CreateDraft() {
+const CreateDraft = () => {
   const [status, setStatus] = useState("idle");
   const [draftData, setDraftData] = useState({
     title: "",
